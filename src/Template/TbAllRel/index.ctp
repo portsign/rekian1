@@ -1,12 +1,9 @@
-<nav class="large-3 medium-4 columns" id="actions-sidebar">
-    <ul class="side-nav">
-        <li class="heading"><?= __('Actions') ?></li>
-        <li><?= $this->Html->link(__('New Tb All Rel'), ['action' => 'add']) ?></li>
-    </ul>
-</nav>
+<?= $this->element('sidebar'); $path = $this->request->here; ?>
 <div class="tbAllRel index large-9 medium-8 columns content">
     <h3><?= __('Tb All Rel') ?></h3>
-    <table cellpadding="0" cellspacing="0">
+	<a href="<?= $path.DS.'add'; ?>" class="button-add">Add Data</a>
+	<div class="distance"></div>
+	<table cellpadding="0" cellspacing="0">
         <thead>
             <tr>
                 <th><?= $this->Paginator->sort('id') ?></th>

@@ -1,11 +1,7 @@
-<nav class="large-3 medium-4 columns" id="actions-sidebar">
-    <ul class="side-nav">
-        <li class="heading"><?= __('Actions') ?></li>
-        <li><?= $this->Html->link(__('New Tb Sma Jrs Rel'), ['action' => 'add']) ?></li>
-    </ul>
-</nav>
+<?= $this->element('sidebar'); $path = $this->request->here; ?>
 <div class="tbSmaJrsRel index large-9 medium-8 columns content">
     <h3><?= __('Tb Sma Jrs Rel') ?></h3>
+	<a href="<?= $path.DS.'add'; ?>" class="button-add">Add Data</a>
     <table cellpadding="0" cellspacing="0">
         <thead>
             <tr>

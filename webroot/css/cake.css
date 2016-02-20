@@ -578,3 +578,11 @@ div.message.hidden {
 .button-login {
 	margin-left: 20px;
 }
+.button-add, .button-add:hover {
+	padding: 10px;
+	color: #FFF;
+	background-color: #116d76;
+}
+.distance {
+	height: 30px;
+}
