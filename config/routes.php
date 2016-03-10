@@ -54,7 +54,8 @@ Router::scope('/', function (RouteBuilder $routes) {
      * ...and connect the rest of 'Pages' controller's URLs.
      */
     $routes->connect('/pages/*', ['controller' => 'Pages', 'action' => 'display']);
-
+    $routes->connect('/all-json,json', ['controller' => 'AllJson', 'action' => 'index']);
+    $routes->extensions(['json', 'xml']);
     /**
      * Connect catchall routes for all controllers.
      *
@@ -71,6 +72,7 @@ Router::scope('/', function (RouteBuilder $routes) {
      * You can remove these routes once you've connected the
      * routes you want in your application.
      */
+
     $routes->fallbacks('DashedRoute');
 });
 

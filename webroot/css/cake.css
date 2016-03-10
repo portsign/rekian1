@@ -447,6 +447,7 @@ fieldset legend {
     float: left;
     text-transform: uppercase;
     box-shadow: none;
+    margin-left: 20px;
 }
 
 .form button:hover, .form button:focus {
@@ -506,7 +507,9 @@ div.message.hidden {
     height: 0;
 }
 
-
+table {
+    border: 1px solid #dfdfdf!important;
+}
 .vertical-table th {
     padding: 0.5625rem 0.625rem;
     font-size: 0.875rem;
