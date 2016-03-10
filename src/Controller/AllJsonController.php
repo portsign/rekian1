@@ -6,9 +6,15 @@ use Cake\Controller\Component\RequestHandlerComponent;
 use Cake\ORM\Query;
 use Cake\ORM\Table;
 use Cake\ORM\TableRegistry;
+use Cake\Event\Event;
 
 class AllJsonController extends AppController
 {
+	public function beforeFilter(Event $event)
+	{
+	    parent::beforeFilter($event);
+	    $this->Auth->allow('index');
+	}
 	public function initialize()
     {
         parent::initialize();

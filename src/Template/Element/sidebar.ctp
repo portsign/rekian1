@@ -10,7 +10,7 @@
         <li <?php if ($path=='/sma-jurusan') { echo 'class="active"'; } ?> ><a href="/sma-jurusan">SMA Jurusan</a></li>
         <li <?php if ($path=='/kampus') { echo 'class="active"'; } ?> ><a href="/kampus">Kampus</a></li>
         <li <?php if ($path=='/kampus-jurusan') { echo 'class="active"'; } ?> ><a href="/kampus-jurusan">Kampus Jurusan</a></li>
-        <li <?php if ($path=='/all-json') { echo 'class="active"'; } ?> ><a href="/all-json">JSON DATA</a></li>
+        <li <?php if ($path=='/all-json.json') { echo 'class="active"'; } ?> ><a href="/all-json.json">JSON DATA</a></li>
         <li><a href="/users/logout">Logout</a></li>
     </ul>
 </nav>
